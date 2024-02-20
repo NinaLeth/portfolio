@@ -118,12 +118,13 @@ p{
 header{
     display: flex;
     justify-content: center;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-bottom: 100px;
 }
 
 .logo_laptop{
     width: 202px;
+    background-color: transparent;
 }
 
 #logo_forside{
@@ -158,6 +159,21 @@ header{
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+#overst{
+    margin-right: -15%;
+    margin-top: -20px;
+    margin-bottom: 150px; /*for at man kan bruge den anden knap*/
+    position: relative;
+    z-index: 1; /*for at denne ligger over logoets baggrund*/
+}
+
+#toppen{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #underst{
@@ -202,6 +218,7 @@ header{
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 5px;
+    margin-bottom: 50px;
 }
 
 .bento div{
@@ -292,6 +309,16 @@ header{
     cursor: pointer;
 }
 
+.forside_knapper{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#forside_knapper{
+    opacity: 0;
+    pointer-events: none;
+}
+
 /*kompetencer*/ 
 
 #nav{
@@ -357,6 +384,27 @@ header{
     grid-row: 8/15;
 }
 
+.grid11{
+    grid-column: 1/3;
+}
+
+.grid12{
+    grid-column: 3/4;
+    grid-row: 1/5;
+}
+
+.grid13{
+    grid-column: 1/3;
+    grid-row: 2/8;
+}
+
+.grid15{
+    grid-column: 1/2;
+    grid-row: 8/16;
+}
+
+
+
 /*kontakt side*/
 
 #callme{
@@ -373,15 +421,18 @@ header{
     margin-right: 25vw;
 }
 
-#tlf{
-    height: 195.64px;
-    margin-left: 50%;
-    margin-bottom: -50%;
-    background-color: transparent;
-
-    transform: translateY(-100px) translateX(5%) rotate(8deg);
+.ikon_tekst{
+    font-size: 10pt;
+    padding-top: 70px;
+    padding-left: 0;
+    text-align: left;
+    color: #827EC3;
 }
 
-.ikon:hover{
-    transform: scale(1.25);
+#ikoner{
+    margin-left: 5%;
+}
+
+.box h1{
+    margin-left: 5%;
 }
