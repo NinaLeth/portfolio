@@ -70,6 +70,7 @@ a{
     font-family: coming soon;
     text-decoration: none;
     color: #FF0523;
+    background-color: transparent;
 }
 
 h1{
@@ -104,7 +105,7 @@ p{
     font-family: coming soon;
     color: #311A4D;
     text-align: left;
-    font-size: 15pt;
+    font-size: 14pt;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -114,8 +115,13 @@ p{
     color: #827EC3;
 }
 
+.textlink:hover{
+    cursor: pointer;
+    color: #827EC3;
+}
+
 /*HEADER*/
-header{
+#header_laptop{
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -127,8 +133,53 @@ header{
     background-color: transparent;
 }
 
+#mobil_logo{
+    height: 100px;
+}
+
 #logo_forside{
     display: none;
+    background-color: transparent;
+}
+
+/*mobil*/
+
+#header_mobil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5%;
+    margin-bottom: 100px;
+
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+/*burgermenu*/
+
+.menu-indhold{
+    height: 100vh;
+    width: 100vw;}
+
+.burgermenu_ikon{
+    height: 50px;
+    margin-left: auto;
+}
+
+#burgermenu{
+    width: 70%;
+    margin-top: 20%;
+}
+
+#nav_menu{
+    display: none;
+    height: 100vh;
+}
+
+#kryds{
+    display: none;
+    margin-top: 5%;
 }
 
 .knapper{
@@ -162,11 +213,9 @@ header{
 }
 
 #overst{
-    margin-right: -15%;
-    margin-top: -20px;
-    margin-bottom: 150px; /*for at man kan bruge den anden knap*/
-    position: relative;
-    z-index: 1; /*for at denne ligger over logoets baggrund*/
+    margin-left: 40%;
+    top:0;
+    margin-bottom: -10px;
 }
 
 #toppen{
@@ -191,6 +240,12 @@ header{
 
 .knap{
     margin-top: 50px;
+}
+
+#knapper{
+    display: flex;
+    flex-direction: column;
+    gap: -50px;
 }
 
 
@@ -219,6 +274,7 @@ header{
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 5px;
     margin-bottom: 50px;
+    
 }
 
 .bento div{
@@ -227,6 +283,24 @@ header{
     border-radius: 25px;
     text-align: center;
 }
+
+.bento_fire{
+    display: grid;
+    margin: auto;
+    max-width: 80vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5px;
+    margin-bottom: 50px;
+}
+
+.bento_fire div{
+    border: 1px solid;
+    border-color: #FF0523;
+    border-radius: 25px;
+    text-align: center;
+}
+
 
 /*pageloader*/
 
@@ -273,8 +347,8 @@ header{
     grid-row: 1/3;
 }
 
-#ommig:hover, 
-#ommig:hover a{
+#om:hover, 
+#om:hover a{
     background-color: #827EC3;
     color: #C2C0E5;
     border-color: #C2C0E5;
@@ -364,47 +438,6 @@ header{
     font-size: 30pt;
 }
 
-.grid5{
-    grid-column: 1/4;
-    grid-row: 1/1;
-}
-
-.grid6{
-    grid-column: 1/4;
-    grid-row: 2/7;
-}
-
-.grid7{
-    grid-column: 1/1;
-    grid-row: 7/15;
-}
-
-.grid10{
-    grid-column: 2/4;
-    grid-row: 8/15;
-}
-
-.grid11{
-    grid-column: 1/3;
-}
-
-.grid12{
-    grid-column: 3/4;
-    grid-row: 1/5;
-}
-
-.grid13{
-    grid-column: 1/3;
-    grid-row: 2/8;
-}
-
-.grid15{
-    grid-column: 1/2;
-    grid-row: 8/16;
-}
-
-
-
 /*kontakt side*/
 
 #callme{
@@ -435,4 +468,333 @@ header{
 
 .box h1{
     margin-left: 5%;
+}
+
+/*RESPONSIVE*/ 
+
+@media (max-width: 1200px) {
+    /*gennerelt*/
+    h1{
+        font-size: 20pt;
+    }
+
+    #header_laptop{
+    display: none;
+   }
+
+   /*grids*/
+    .bento,
+    .bento_fire {
+        grid-template-columns: 1fr; /* Set the number of columns to 1 for smaller screens */
+        width: 80vw;
+    }
+
+    .bento_fire div,
+    .bento div {
+        grid-column: 1; /* Span the full width of the grid for each item */
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    .bento_fire img, 
+    .bento img{
+        width: 100%;
+    }
+
+
+    /*case siden*/
+    #nav_1 a{
+        margin: 0;
+        margin-bottom: 5px;
+        
+        font-size: 20pt;
+        text-align: left;
+        
+        padding: 0%;
+        padding-left: 5px;
+        padding-right: 5px;
+    } 
+
+    .grid43 .grimfest{
+        width: 50px;
+    }
+
+    .grid44 .grimfest{
+        width: 50px;
+    }
+
+    .grid43, 
+    .grid44{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    /*gellerelt*/
+    #header_mobil{
+        display: none;
+    }
+
+    /*cases side*/
+    .grid5{
+        grid-column: 1/4;
+        grid-row: 1/1;
+    }
+
+    .grid6{
+        grid-column: 1/4;
+        grid-row: 2/7;
+    }
+
+    .grid7{
+        grid-column: 1/1;
+        grid-row: 7/15;
+    }
+
+    .grid10{
+        grid-column: 2/4;
+        grid-row: 8/15;
+    }
+
+    .grid11{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .grid12{
+        grid-column: 3/4;
+        grid-row: 1/5;
+    }
+
+    .grid13{
+        grid-column: 1/3;
+        grid-row: 2/7;
+        background-image: url(images/gh_moodboard.jpg);
+        background-size: 100%;
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid14{
+        grid-column: 3/4;
+        grid-row: 6/7;
+    }
+
+    .grid15{
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+
+    .grid16{
+        grid-column: 2/4;
+        grid-row: 7/9;
+        overflow: hidden;
+    }
+
+    #engel{
+        width: 60%;
+        transform: scaleX(-1);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .grid17{
+        grid-column: 1/1;
+        grid-row: 7/9;
+    }
+
+    /*grid18{
+        grid-column: 1/2;
+        grid-row: 9/10;
+        background-color: transparent;
+        overflow: hidden;
+        padding-bottom: 5%;
+    }*/
+
+    #telefon{
+        width: 100%;
+    }
+
+    .grid19{
+        grid-column: 1/2;
+        grid-row: 9/10;
+        overflow: hidden;
+    }
+    .grid20{
+        grid-column: 1/2;
+        grid-row: 10/12;
+        overflow: hidden;
+    }
+
+    #bk_insta{
+        width: 100%;
+        height: 100%;
+    }
+
+    #farver_bk{
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid21{
+        grid-column: 2/4;
+        grid-row: 9/11;
+        padding-top: 8%;
+    }
+
+    .grid22{
+        grid-column: 2/4;
+        grid-row: 11/14;
+        overflow: hidden;
+    }
+
+
+    #font_bk{
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid23{
+        grid-column: 1/4;
+    }
+
+    .grid24{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .grid25{
+        grid-column: 4/4;
+        grid-row: 5/5
+    }
+
+    .grid26{
+        grid-column: 4/4;
+        grid-row: 6/6
+    }
+
+    /*
+    .grid27{
+        grid-column: 1/4;
+        grid-row: 2/5;
+        overflow: hidden;
+    }*/
+
+    .grid28{
+        grid-column: 1/4;
+        grid-row: 2/7;
+        overflow: hidden;
+    }
+
+    .grid29{
+        grid-column: 4/4;
+        grid-row: 1/5;
+    }
+
+    .grid30{
+        grid-column: 1/5;
+        grid-row: 7/10;
+    }
+
+    .grid31{
+        grid-column: 1/5;
+        grid-row: 10/15;
+        background-color: transparent;
+        overflow: hidden;
+
+    }
+
+    .grid32{
+        grid-column: 1/3;
+        grid-row: 15/16;
+    }
+
+    .grid33{
+        grid-column: 3/5;
+        grid-row: 15/20;
+    }
+
+    .grid34{
+        grid-column: 1/2;
+        grid-row: 16/17;
+    }
+
+    .grid35{
+        grid-column: 2/3;
+        grid-row: 16/17;
+    }
+
+    .grid36{
+        grid-column: 1/3;
+        grid-row: 17/20;
+        overflow: hidden;
+    }
+
+    #bk{
+        text-align: center;
+        align-items: center;
+    }
+
+    .grid37{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .grid38{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .grid39{
+        grid-column: 1/2;
+        grid-row: 2/5;
+    }
+
+    .grid40{
+        padding-top: 5%;
+        grid-column: 2/4;
+        grid-row: 2/5;
+        padding-bottom: 5%;
+    }
+
+    .grid41{
+        grid-column: 1/3;
+        grid-row: 6/9;
+    }
+
+    .grid42{
+        grid-column: 3/4;
+        grid-row: 5/9;
+    }
+
+    .grid43{
+        grid-column: 1/2;
+        grid-row: 5/6;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid44{
+        grid-column: 2/3;
+        grid-row: 5/6;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grimfest{
+        width: 50px;
+    }
+
+    .grimfest:hover{
+        transform: scale(1.25);
+    }
 }

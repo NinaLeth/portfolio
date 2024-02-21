@@ -38,25 +38,53 @@ if (!sessionStorage.getItem('visited')) {
     sessionStorage.setItem('visited', true);
 }
 
+/*BURGERMENU*/
+
+const nav = document.getElementById("nav_menu")
+const menu = document.getElementById("menu");
+const kryds = document.getElementById("kryds");
+const logo = document.getElementById("mobil_logo");
+
+function visMenu() {
+    nav.style.display = "block";
+    menu.style.display = "none";
+    kryds.style.display = "block";
+    logo.style.display = "none";
+    nav.style.backgroundColor = "#C2C0E5";
+  }
+
+menu.onclick= visMenu;
+
+function gemMenu() {
+  nav.style.display = "none";
+  kryds.style.display = "none";
+  menu.style.display = "block";
+  logo.style.display = "block";
+}
+
+kryds.onclick= gemMenu;
+
 /*KNAPPER*/
 
-const ommig = document.getElementById('ommig');
-const cases = document.getElementById('cases');
-const kontakt = document.getElementById('kontakt');
-const kompetencer = document.getElementById('kompetencer');
+document.addEventListener("DOMContentLoaded", function () {
+    const nina = document.getElementById('om');
+    const cases = document.getElementById('cases');
+    const kontakt = document.getElementById('kontakt');
+    const kompetencer = document.getElementById('kompetencer');
 
-ommig.addEventListener('click', function() {
-    window.location.href = 'ommig.html';
-});
+    nina.addEventListener('click', function() {
+        window.location.href= 'ommig.html';
+    });
 
-cases.addEventListener('click', function() {
-    window.location.href = 'cases.html';
-});
+    cases.addEventListener('click', function() {
+        window.location.href = 'cases.html';
+    });
 
-kontakt.addEventListener('click', function() {
-    window.location.href = 'kontakt.html';
-});
+    kontakt.addEventListener('click', function() {
+        window.location.href = 'kontakt.html';
+    });
 
-kompetencer.addEventListener('click', function() {
-    window.location.href = 'kompetencer.html';
+    kompetencer.addEventListener('click', function() {
+        window.location.href = 'kompetencer.html';
+    });
 });
