@@ -38,6 +38,11 @@ if (!sessionStorage.getItem('visited')) {
     sessionStorage.setItem('visited', true);
 }
 
+// Lyt efter beforeunload-eventet og fjern 'visited' fra sessionStorage
+window.addEventListener('beforeunload', function() {
+    sessionStorage.removeItem('visited');
+});
+
 /*BURGERMENU*/
 
 const nav = document.getElementById("nav_menu")
@@ -50,7 +55,6 @@ function visMenu() {
     menu.style.display = "none";
     kryds.style.display = "block";
     logo.style.display = "none";
-    nav.style.backgroundColor = "#C2C0E5";
   }
 
 menu.onclick= visMenu;
@@ -66,25 +70,14 @@ kryds.onclick= gemMenu;
 
 /*KNAPPER*/
 
-document.addEventListener("DOMContentLoaded", function () {
-    const nina = document.getElementById('om');
-    const cases = document.getElementById('cases');
-    const kontakt = document.getElementById('kontakt');
-    const kompetencer = document.getElementById('kompetencer');
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('.wrapper div');
 
-    nina.addEventListener('click', function() {
-        window.location.href= 'ommig.html';
-    });
-
-    cases.addEventListener('click', function() {
-        window.location.href = 'cases.html';
-    });
-
-    kontakt.addEventListener('click', function() {
-        window.location.href = 'kontakt.html';
-    });
-
-    kompetencer.addEventListener('click', function() {
-        window.location.href = 'kompetencer.html';
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            const destination = this.querySelector('a').getAttribute('href');
+            window.location.href = destination;
+        });
     });
 });
+

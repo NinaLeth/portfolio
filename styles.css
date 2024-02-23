@@ -1,9 +1,12 @@
 /*GENNERELT*/
 *{
-    background-color: #C2C0E5;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body#baggrund_lilla{
+    background-color: #C2C0E5;
 }
 
 section{
@@ -16,22 +19,22 @@ section{
 .ikon{
     margin-top: 50px;
     height: 50px;
+    margin-right: 1vw;
 }
 
 .ikon:hover{
     transform: scale(1.25);
 }
 
-.box{
-    border: solid;
-    border-color: #FF0523;
-    border-radius: 25px;
-    padding: 2%;
+#box div {
+    display: flex;
+    border: none;
+    width: 100%;
+    background-color: transparent;
 }
 
-.box div {
-    display: flex;
-    gap: 5%
+#box div p{
+    padding-right: 0;
 }
 
 video {
@@ -40,6 +43,12 @@ video {
     object-fit: cover;
 
     border-radius: 25px;    
+  }
+
+  .link_bento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .link_bento a{
@@ -80,6 +89,10 @@ h1{
     background-color: transparent;
 }
 
+#lilla{
+    color: #827EC3;
+}
+
 h2{
     font-family: coming soon;
     font-size: 20pt;
@@ -101,6 +114,25 @@ h3{
     background-color: transparent;
 }
 
+h4{
+    font-family: coming soon;
+    font-size: 14pt;
+    color: #827EC3;
+    text-align: left;
+    padding-left: 5%;
+    background-color: transparent;
+}
+
+#andet{
+    font-family: coming soon;
+    font-size: 14pt;
+    color: #827EC3;
+    text-align: left;
+    padding-left: 5%;
+    background-color: transparent;
+    padding: 0;
+}
+
 p{
     font-family: coming soon;
     color: #311A4D;
@@ -108,9 +140,10 @@ p{
     font-size: 14pt;
     padding-left: 5%;
     padding-right: 5%;
+    background-color: transparent;
 }
 
-.kontakt{
+#kontakt_mig{
     font-size: 20pt;
     color: #827EC3;
 }
@@ -120,12 +153,37 @@ p{
     color: #827EC3;
 }
 
+.cv{
+    padding-top: 0;
+}
+
+.overskrift{
+    padding: 0;
+    margin: 0;
+}
+
+#papirsblomster{
+    color: #827EC3;
+}
+
+.grid73 ul li{
+    margin-left: 7%;
+}
+
+ul li{
+    font-family: coming soon;
+    text-align: left;
+    margin-left: 8%;
+    list-style-type:circle; 
+}
+
 /*HEADER*/
 #header_laptop{
     display: flex;
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 100px;
+    background-color: transparent;
 }
 
 .logo_laptop{
@@ -135,6 +193,7 @@ p{
 
 #mobil_logo{
     height: 100px;
+    background-color: transparent;
 }
 
 #logo_forside{
@@ -149,38 +208,56 @@ p{
     justify-content: center;
     align-items: center;
 
-    margin-top: 5%;
     margin-bottom: 100px;
 
     padding-right: 10%;
     padding-left: 10%;
+    padding-top: 2%;
+
+    background-color: transparent;
+
+    position: fixed;
 }
 
 /*burgermenu*/
 
 .menu-indhold{
     height: 100vh;
-    width: 100vw;}
+    width: 100vw;
+}
 
 .burgermenu_ikon{
     height: 50px;
     margin-left: auto;
+    background-color: transparent;
 }
 
 #burgermenu{
     width: 70%;
     margin-top: 20%;
+    background-color: transparent;
 }
 
 #nav_menu{
     display: none;
     height: 100vh;
+    background-color: rgba(194, 192, 229, 0.8);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+#burgermenu_indhold{
+    background-color: rgba(194, 192, 229, 0);
 }
 
 #kryds{
     display: none;
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-right: 10%;
 }
+
+/*burgermenu slut*/
 
 .knapper{
     border: solid;
@@ -245,7 +322,7 @@ p{
 #knapper{
     display: flex;
     flex-direction: column;
-    gap: -50px;
+    /*gap: -50px;*/
 }
 
 
@@ -264,6 +341,11 @@ p{
     border-color: #FF0523;
     border-radius: 25px;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 }
 
 .bento{
@@ -284,6 +366,14 @@ p{
     text-align: center;
 }
 
+.bento .grid76{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .bento_fire{
     display: grid;
     margin: auto;
@@ -301,82 +391,86 @@ p{
     text-align: center;
 }
 
-
-/*pageloader*/
-
-#pageloader{
-    background-color: #C2C0E5;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bento_fem{
+    display: grid;
+    margin: auto;
+    max-width: 80vw;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5px;
+    margin-bottom: 50px;
 }
 
-#et{
-    display: none;
-    position: absolute;
-    z-index: 0;
-}
-
-#to{
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-
-#tre{
-    display: none;
-    position: relative;
-    z-index: 2;
-}
-
-#content{
-    display: none;
+.bento_fem div{
+    border: 1px solid;
+    border-color: #FF0523;
+    border-radius: 25px;
+    text-align: center;
 }
 
 /*forsiden*/
 
-#forside{
-    max-width: 30%;
-    margin-left: 50%;
-    margin-top: 10%;
+body.forside_baggrund{
+    background-image: url(images/fotos/forside.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    top:0;
+}
+
+#forsiden{
+    grid-column: 1/3;
 }
 
 .grid1{
-    grid-row: 1/3;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-color: transparent;
 }
 
-#om:hover, 
-#om:hover a{
-    background-color: #827EC3;
-    color: #C2C0E5;
-    border-color: #C2C0E5;
-    cursor: pointer;
+.grid2{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
-#kompetencer:hover, 
-#kompetencer:hover a{
-    background-color: #827EC3;
-    color: #C2C0E5;
-    border-color: #C2C0E5;
-    cursor: pointer;
-}
-
-#kontakt:hover, 
-#kontakt:hover a{
-    background-color: #827EC3;
-    color: #C2C0E5;
-    border-color: #C2C0E5;
-    cursor: pointer;
+.grid3{
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
 
 .grid4{
     grid-column: 1/3;
 }
 
-#cases:hover, 
-#cases:hover a{
+.om:hover, 
+.om:hover a{
+    background-color: #827EC3;
+    color: #C2C0E5;
+    border-color: #C2C0E5;
+    cursor: pointer;
+}
+
+.kompetencer:hover, 
+.kompetencer:hover a{
+    background-color: #827EC3;
+    color: #C2C0E5;
+    border-color: #C2C0E5;
+    cursor: pointer;
+}
+
+.kontakt:hover, 
+.kontakt:hover a{
+    background-color: #827EC3;
+    color: #C2C0E5;
+    border-color: #C2C0E5;
+    cursor: pointer;
+}
+
+.cases:hover, 
+.cases:hover a{
     background-color: #827EC3;
     color: #C2C0E5;
     border-color: #C2C0E5;
@@ -393,81 +487,129 @@ p{
     pointer-events: none;
 }
 
-/*kompetencer*/ 
+/*erfaring*/ 
 
-#nav{
-    display: flex;
-    flex-direction: column;
+body.erfaring_baggrund{
+    background-image: url(images/fotos/erfaring.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    top:0;
 }
 
-#nav div{
+.grid46,
+.grid71,
+.grid75,
+.grid77{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 10%;
-}
-
-#nav a {
-    margin-top: -5px;
-
-    padding-top: 1px;
-    padding-bottom: 1px;
-
-    font-size: 30pt;
+    justify-content: center;
+    align-items: center;
 }
 
 /*cases*/
 
-#nav_1{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25%;
+body.case_baggrund{
+    background-image: url(images/fotos/cases_2.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    top:0;
 }
 
-#nav_1 div{
+.grid5,
+.grid11,
+.grid24,
+.grid37,
+.grid32{
     display: flex;
-    justify-content: flex-start;
-    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
-#nav_1 a {
-    margin-top: -5px;
-
-    padding-top: 1px;
-    padding-bottom: 1px;
-
-    font-size: 30pt;
+#bk{
+    text-align: center;
+    align-items: center;
 }
 
 /*kontakt side*/
-
-#callme{
-    width: 450px;
-    height: 450px;
-    border: solid;
-    border-color: #FF0523;
-    border-radius: 25px;
-    margin-left: 10%;
+#ringmig{
+    display: block;
+    width: 100%;
+    height: auto;  
 }
 
-.kontakt{
-    padding-top: 10px;
-    margin-right: 25vw;
-}
-
-.ikon_tekst{
-    font-size: 10pt;
-    padding-top: 70px;
-    padding-left: 0;
-    text-align: left;
-    color: #827EC3;
+.grid45{
+    overflow: hidden;
 }
 
 #ikoner{
     margin-left: 5%;
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 0;
 }
 
-.box h1{
-    margin-left: 5%;
+/*om mig*/
+#pil{
+    width: 130px;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    margin-top: -20px;
+    margin-left: 10px;
+ }
+
+ .moodboards{
+    width: 100%;
+ }
+
+ .bento_fire .grid94{
+    border-color: #827EC3;
+ }
+
+ .bento_fire .grid97{
+    border-color: #827EC3;
+ }
+
+ #papirsblomst{
+    padding: 20%;
+ }
+
+ #museum{
+    width: 60%;
+    padding: 5%;
+ }
+
+ .grid81 img, 
+ .grid84 img,
+ .grid95 img,
+ .grid98 img, 
+ .grid72 img{
+    display: block;
+    width: 100%;
+    height: auto;
+ }
+
+ .moodboards{
+        display: block;
+        width: 100%;
+        height: auto;
+ }
+
+/*FOOTER*/
+footer{
+    background-image: url(images/fotos/footer.jpg);
+    background-size: cover; /* Dette sikrer, at billedet dækker hele baggrunden */
+    background-repeat: no-repeat; /* For at forhindre gentagelse af baggrundsbilledet */
+    background-position: right;
+    height: 300px;
 }
 
 /*RESPONSIVE*/ 
@@ -478,42 +620,187 @@ p{
         font-size: 20pt;
     }
 
+    h2{
+        font-size: 18pt;
+    }
+
+    h3{
+        font-size: 15pt;
+    }
+
+    .link_bento a{
+        font-size: 15pt;
+    }
+
     #header_laptop{
     display: none;
    }
 
-   /*grids*/
-    .bento,
-    .bento_fire {
-        grid-template-columns: 1fr; /* Set the number of columns to 1 for smaller screens */
-        width: 80vw;
+   .laptop_h1{
+    display: none;
+   }
+
+   .grid21{
+    padding-bottom: 50px;
+   }
+
+   footer{
+    background-image: url(images/fotos/footer_mobil.jpg);
+    background-size: cover; /* Dette sikrer, at billedet dækker hele baggrunden */
+    background-repeat: no-repeat; /* For at forhindre gentagelse af baggrundsbilledet */
+    background-position: center;
+    height: 400px;
+}
+    /*pageloader*/
+
+    #pageloader{
+        background-color: #C2C0E5;
+        width: 100vw;
+        height: 100vh;
+        top:0;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+    #pageloader img{
+        width: 100%;
+        border-radius: 20px;
+        border:solid;
+        border-color: #FF0523;
+    }
+
+    #et{
+        display: none;
+        position: absolute;
+        z-index: 2;
+        width: 70vw;
+    }
+
+    #to{
+        display: none;
+        position: absolute;
+        z-index: 3;
+        width: 70vw;
+        transform: rotate(20deg);
+    }
+
+    #tre{
+        display: none;
+        position: relative;
+        z-index: 4;
+        width: 70vw;
+        transform: rotate(-10deg);
+
+    }
+
+    #content{
+        display: none;
+    }
+   /*grids*/
+    
+    .bento_fem,
+    .bento,
+    .bento_fire,
+    .bento_fem {
+        grid-template-columns: 1fr; /* Set the number of columns to 1 for smaller screens */
+        grid-gap: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }  
+
+    .bento_fem,
     .bento_fire div,
-    .bento div {
+    .bento div,
+    .bento_fem div {
+        margin-top: 5px;
         grid-column: 1; /* Span the full width of the grid for each item */
-        width: 80vw;
+        width: 100%;
         overflow: hidden;
     }
 
+    .bento_fem img,
     .bento_fire img, 
-    .bento img{
+    .bento img,
+    .bento_fem img{
         width: 100%;
     }
 
+    /*forside*/
 
+    #forside{
+        padding-top: 200px; /*så det kommer under headeren*/
+        background-color: transparent;
+    }
+
+    body.forside_baggrund{
+        background-image: url(images/fotos/forside_mobil.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        top:0;
+    }
+    
     /*case siden*/
     #nav_1 a{
         margin: 0;
         margin-bottom: 5px;
         
-        font-size: 20pt;
-        text-align: left;
+        font-size: 18pt;
         
         padding: 0%;
         padding-left: 5px;
         padding-right: 5px;
     } 
+
+    #nav_1 {
+        padding-top: 150px; /*så det kommer under headeren*/
+        margin-bottom: 20%;
+        display: flex;
+        justify-content: left;
+        padding-left: 5%;
+        gap:7px;
+    }
+
+    #webdesign{
+        margin-top: 400px;
+    }
+
+    body.case_baggrund{
+        background-image: url(images/fotos/cases_mobil.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        top:0;
+    }
+
+    .grid23{
+        display: none;
+    }
+
+    #webdesign,
+    #visuelidentitet, 
+    #visuelleeffekter, 
+    #contentcreation
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid5{
+        margin-top: 400px;
+    }
 
     .grid43 .grimfest{
         width: 50px;
@@ -529,6 +816,289 @@ p{
         justify-content: center;
         align-items: center;
     }
+
+    .grid47{
+        width: 100vw;
+    }
+
+    .grid10, 
+    .grid16, 
+    .grid33, 
+    .grid40{
+        padding-bottom: 50px;
+    }
+
+    .grid13{
+        background-image: url(images/gh_moodboard.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        align-items: center;
+        text-align: center; 
+        padding-top: 50%;
+    }
+
+    .grimfest{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    
+    /*erfaring siden*/
+
+    body.erfaring_baggrund{
+        background-image: url(images/fotos/erfaring_mobil.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        top:0;
+    }
+
+    #nav a{
+        margin: 0;
+        margin-bottom: 5px;
+        
+        font-size: 18pt;
+        
+        padding: 0%;
+        padding-left: 5px;
+        padding-right: 5px;
+    } 
+
+    #nav {
+        padding-top: 150px; /*så det kommer under headeren*/
+        margin-bottom: 20%;
+        display: flex;
+        justify-content: right;
+        padding-right: 5%;
+        gap:7px;
+    }
+
+    #referencer{
+        margin-top: 400px;
+    }
+
+    #andet{
+        font-size: 10pt;
+    }
+
+    .tegninger{
+        width: 50%;
+        padding: 5%;
+    }
+
+    /*mobil rækkefølge*/
+    .grid49,
+    .grid48,
+    .grid50,
+    .grid51,
+    .grid52,
+    .grid53,
+    .grid54,
+    .grid55,
+    .grid56,
+    .grid57,
+    .grid58,
+    .grid59{
+        display: none;
+    }
+
+    .grid48{
+        padding-bottom: 10%;
+    }
+
+    .grid55{
+        padding: 5%;
+    }
+
+    .grid60 h2,
+    .grid115 h2,
+    .grid64 h2,
+    .grid68 h2,
+    .grid69 h2,
+    .grid93 h2,
+    .grid94 h2{
+        text-align: center;
+        padding: 5%;
+        margin: 0;
+    }
+
+    .grid61 h2{
+        text-align: center;
+        padding: 2%;
+        margin: 0;
+    }
+
+
+        /*programmer jeg kender*/
+
+    #programmer_jeg_kender{
+            display: none;
+        }
+    
+    #programmer_mobil{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    #programmer_mobil h1{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 1%;
+        border: solid;
+        border-color: #FF0523;
+        border-radius: 20px;
+    }
+
+    #programmer_mobil div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #programmer_mobil img{
+        border-radius: 20px;
+        border-width: 1px;
+    }
+
+    .programmer{
+        width: 100px;
+        height: 100px;
+        border: solid;
+        border-color: #FF0523;
+        border-radius: 20px;
+    }
+
+    .meta{
+        height: 100px;
+        width: 120px;
+        padding-bottom: 12px;
+    }
+
+    .figma{
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+        /*kodesprog*/
+    .grid77,
+    .grid78, 
+    .grid79,
+    .grid80{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*om mig*/
+
+    #ommig{
+        padding-top: 200px; /*så det kommer under headeren*/
+    }
+
+    #pil{
+        width: 20%;
+        position: absolute;
+        z-index: 1;
+        background-color: transparent;
+        margin-top: -20px;
+        margin-left: 20%;
+    }
+
+    .gird95 img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .grid101,
+    .grid102,
+    .grid104,
+    .grid105,
+    .grid106,
+    .grid107,
+    .grid82{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid103{
+        overflow: hidden;
+        padding: 10%;
+    }
+
+
+    /*kontaktside*/
+    /*#box #ikoner {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 0;
+    }*/
+
+    /*#ikoner div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding-left: 5%;
+    }*/
+
+    #ikoner {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; /* Centrerer ikonerne og teksten vandret */
+        text-align: left; /* Centrerer teksten */
+        padding-bottom: 10%;
+    }
+
+    #ikoner div{
+        display: flex;
+        align-items: center; /* Centrerer ikonerne og teksten vandret */
+        margin: -20px;
+        padding: 0; /* Tilføjer lidt afstand mellem ikonerne og teksten */
+        border-radius: 0;
+    }
+
+    #callme{
+        padding-top: 200px; /*så det kommer under headeren*/
+    }
+
+    #ikoner img{
+        width: 50px;
+    }
+
+    .ikon_tekst{
+        font-size: 10pt;
+        padding-top: 50px;
+        padding-left: 0;
+        text-align: left;
+        color: #827EC3;
+    }
+
+    #box{
+        padding: 5%;
+    }
+
+    .grid110{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #kontakt_mig{
+        font-size: 15pt;
+    }
+
 }
 
 
@@ -539,7 +1109,92 @@ p{
         display: none;
     }
 
+    .mobil_h1{
+        display: none;
+    }
+
+    /*pageloader*/
+
+    #pageloader{
+        background-color: #C2C0E5;
+        width: 100vw;
+        height: 100vh;
+        top:0;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pageloader img{
+        width: 100%;
+        border-radius: 50px;
+        border:solid;
+        border-color: #FF0523;
+    }
+
+    #et{
+        display: none;
+        position: absolute;
+        z-index: 2;
+        width: 30vw;
+    }
+
+    #to{
+        display: none;
+        position: absolute;
+        z-index: 3;
+        width: 30vw;
+        transform: rotate(20deg);
+    }
+
+    #tre{
+        display: none;
+        position: relative;
+        z-index: 4;
+        width: 30vw;
+        transform: rotate(-10deg);
+
+    }
+
+    #content{
+        display: none;
+    }
+
+    /*forside*/
+
+    #forside{
+        max-width: 30%;
+        margin-left: 50%;
+        margin-top: 10%;
+        background-color: transparent;
+    }
+
+
     /*cases side*/
+
+    #nav_1{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25%;
+    }
+    
+    #nav_1 div{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10%;
+    }
+    
+    #nav_1 a {
+        margin-top: -5px;
+    
+        padding-top: 1px;
+        padding-bottom: 1px;
+    
+        font-size: 30pt;
+    }
+
     .grid5{
         grid-column: 1/4;
         grid-row: 1/1;
@@ -580,20 +1235,21 @@ p{
         text-align: center;
     }
 
-    .grid14{
+    #grid14{
         grid-column: 3/4;
         grid-row: 6/7;
     }
 
-    .grid15{
-        grid-column: 2/3;
-        grid-row: 7/8;
+    #grid15{
+        grid-column: 3/4;
+        grid-row: 5/6;
     }
 
     .grid16{
         grid-column: 2/4;
         grid-row: 7/9;
         overflow: hidden;
+        padding-top: 70px;
     }
 
     #engel{
@@ -606,18 +1262,6 @@ p{
     .grid17{
         grid-column: 1/1;
         grid-row: 7/9;
-    }
-
-    /*grid18{
-        grid-column: 1/2;
-        grid-row: 9/10;
-        background-color: transparent;
-        overflow: hidden;
-        padding-bottom: 5%;
-    }*/
-
-    #telefon{
-        width: 100%;
     }
 
     .grid19{
@@ -663,14 +1307,14 @@ p{
         grid-column: 1/4;
     }
 
-    .grid24{
-        grid-column: 1/4;
-        grid-row: 1/2;
+    #grid24{
+        grid-column: 1/2;
+        grid-row: 12/13;
     }
 
-    .grid25{
-        grid-column: 4/4;
-        grid-row: 5/5
+    #grid25{
+        grid-column: 1/2;
+        grid-row: 13/14;
     }
 
     .grid26{
@@ -678,12 +1322,10 @@ p{
         grid-row: 6/6
     }
 
-    /*
     .grid27{
         grid-column: 1/4;
-        grid-row: 2/5;
-        overflow: hidden;
-    }*/
+        grid-row: 1/2
+    }
 
     .grid28{
         grid-column: 1/4;
@@ -706,7 +1348,6 @@ p{
         grid-row: 10/15;
         background-color: transparent;
         overflow: hidden;
-
     }
 
     .grid32{
@@ -719,12 +1360,12 @@ p{
         grid-row: 15/20;
     }
 
-    .grid34{
+    #grid34{
         grid-column: 1/2;
         grid-row: 16/17;
     }
 
-    .grid35{
+    #grid35{
         grid-column: 2/3;
         grid-row: 16/17;
     }
@@ -735,17 +1376,12 @@ p{
         overflow: hidden;
     }
 
-    #bk{
-        text-align: center;
-        align-items: center;
-    }
-
     .grid37{
         grid-column: 1/3;
         grid-row: 1/2;
     }
 
-    .grid38{
+    #grid38{
         grid-column: 3/4;
         grid-row: 1/2;
     }
@@ -797,4 +1433,454 @@ p{
     .grimfest:hover{
         transform: scale(1.25);
     }
+
+    /*erfarings siden*/
+    .mobil_version{
+        display: none;
+    }
+
+
+#nav{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25%;
 }
+
+#nav div{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+#nav a {
+    margin-top: -5px;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    font-size: 30pt;
+}
+    
+        /*pia*/
+    .grid47{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .grid48{
+        grid-column: 1/3;
+        grid-row: 2/7;
+        padding-top: 10%;
+    }
+
+    .grid49{
+        grid-column: 3/4;
+    }
+
+    .grid50{
+        grid-column: 3/4;
+    }
+
+    .h{
+        text-align: right;
+        padding-right: 5%;
+    }
+
+    .grid51{
+        grid-column: 3/4; 
+        grid-row: 4/7;
+        overflow: hidden;
+    }
+
+    .grid47{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .grid48{
+        grid-column: 1/3;
+        grid-row: 2/7;
+    }
+
+    .grid49, 
+    .grid50{
+        grid-column: 3/4;
+    }
+
+    .h{
+        text-align: right;
+        padding-right: 5%;
+    }
+
+    .grid51{
+        grid-column: 3/4; 
+        grid-row: 4/7;
+        overflow: hidden;
+    }
+
+    .tegninger{
+        width: 100%;
+        padding: 10%;
+    }
+
+        /*Nette*/
+
+    .grid52{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .grid54{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .grid53{
+        grid-column: 2/4;
+        grid-row: 1/7;
+    }
+
+    .grid53 p{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .grid55{
+        grid-column: 1/2; 
+        grid-row: 3/7;
+        overflow: hidden;
+    }
+
+        /*amalie*/
+    .grid56{
+        grid-column: 1/3;
+        grid-row: 1/7;
+        padding-top: 10%
+    }
+
+    .grid57{
+        grid-column: 3/4;
+        grid-row: 1/2
+    }
+ 
+    .grid58{
+        grid-column: 3/4;
+        grid-row: 2/3
+    }
+
+    .grid59{
+        grid-column: 3/4; 
+        grid-row: 3/7;
+        overflow: hidden;
+    }
+
+        /*cv*/
+    .grid71{
+        grid-column: 1/4; 
+        grid-row: 1/2;
+    }
+
+    .grid72{
+        grid-column: 1/2; 
+        grid-row: 2/4;
+        overflow: hidden;
+    }
+
+    .grid73{
+        grid-column: 2/4; 
+        grid-row: 2/12;
+    }
+
+    .grid74{
+        grid-column: 1/2; 
+        grid-row: 4/12;
+    }
+
+        /*programmer*/
+    .grid75{
+        grid-column: 1/4; 
+        grid-row: 1/2;
+    }
+
+    .grid76{
+        grid-column: 1/4; 
+        grid-row: 2/3;
+        padding-top: 5px;
+    }
+
+    .programmer{
+        width: 150px;
+        height: 150px;
+        border: solid;
+        border-color: #FF0523;
+        border-radius: 30px;
+    }
+
+    .meta{
+        height: 150px;
+        width: 175px;
+        padding-bottom: 12px;
+    }
+
+    .figma{
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .grid77{
+        grid-column: 1/4; 
+        grid-row: 1/2;
+    }
+
+    .grid78,
+    .grid79,
+    .grid80{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     /*om mig*/
+     .grid81{
+        grid-column: 1/2; 
+        grid-row: 1/5;
+        overflow: hidden;
+     }
+
+     .grid82{
+        grid-column: 2/4; 
+        grid-row: 1/2;
+     }
+
+     .grid83{
+        grid-row: 2/5;
+        padding-bottom: 10%;
+     }
+
+     .grid84{
+        grid-row: 2/5;
+        overflow: hidden;
+     }
+
+     .grid85{
+        grid-column: 1/4; 
+        grid-row: 1/2;
+     }
+
+     .grid86{
+        grid-column: 1/2; 
+        grid-row: 2/7;
+     }
+
+     .grid87{
+        grid-column: 2/4; 
+        grid-row: 2/7;
+        overflow:hidden;
+     }
+
+     .grid87 img{
+        height: 100%;
+     }
+
+     .grid88{
+        grid-column: 1/3; 
+        grid-row: 7/12;
+        overflow: hidden;
+     }
+
+     .grid88 img{
+        height: 100%;
+     }
+     
+     .grid89{
+        grid-column: 3/4; 
+        grid-row: 7/12; 
+        overflow: hidden;
+     }
+
+     .grid89 img{
+        height: 100%;
+     }
+
+     .grid90{
+        grid-column: 1/2; 
+        grid-row: 12/17;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 5%;
+     }
+
+     .grid91{
+        grid-column: 2/4; 
+        grid-row: 12/17;
+        overflow: hidden;
+     }
+
+     .grid91 img{
+        height: 100%;
+     }
+
+    .grid92{
+        grid-column: 1/5; 
+        grid-row: 1/2;
+    }
+
+    .grid93{
+        grid-column: 1/2; 
+        grid-row: 5/6;
+    }
+
+    .grid93,
+    .grid94{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid94{
+        grid-column: 2/3; 
+        grid-row: 5/6;
+    }
+
+    .grid95{
+        grid-column: 3/5; 
+        grid-row: 2/4;
+        overflow: hidden;
+        background-color: #0d0715;
+    }
+
+    .grid96{
+        grid-column: 1/3; 
+        grid-row: 2/5;
+        overflow: hidden;
+    }
+
+    .grid97{
+        grid-column: 3/5; 
+        grid-row: 4/10;
+        overflow: hidden;
+    }
+
+    .grid98{
+        grid-column: 1/3; 
+        grid-row: 6/12;
+        overflow: hidden;
+    }
+
+    .grid99{
+        grid-column: 3/5; 
+        grid-row: 10/12; 
+    }
+
+    .grid100{
+        grid-column: 1/6; 
+        grid-row: 1/2;
+    }
+
+    .grid101{
+        grid-column: 1/2; 
+        grid-row: 2/3;
+    }
+
+    .grid102{
+        grid-column: 2/4; 
+        grid-row: 2/3;
+    }
+
+    .grid103{
+        grid-column: 4/6; 
+        grid-row: 2/8;
+        overflow: hidden;
+    }
+
+    .grid104{
+        grid-column: 1/3; 
+        grid-row: 3/4;
+    }
+
+    .grid105{
+        grid-column: 3/4; 
+        grid-row: 3/4;
+    }
+
+    .grid106{
+        grid-column: 1/2; 
+        grid-row: 4/5;
+    }
+
+    .grid107{
+        grid-column: 2/4; 
+        grid-row: 4/5;
+    }
+
+    .grid108{
+        grid-column: 1/4; 
+        grid-row: 5/8;
+    }
+
+    .grid109{
+        grid-column: 1/6; 
+        grid-row: 8/9;
+    }
+
+    .grid101,
+    .grid102,
+    .grid104,
+    .grid105,
+    .grid106,
+    .grid107{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*kontaktsiden*/
+   #callme{
+        padding-left: 5%;
+    }
+
+    .ikon_tekst{
+        font-size: 10pt;
+        padding-top: 70px;
+        padding-left: 0;
+        text-align: left;
+        color: #827EC3;
+    }
+
+    #kontakt_mig{
+        margin-right: 25vw;
+         text-align: left;
+     }
+
+    .grid45{
+       width: 450px;
+
+       grid-column: 1/2;
+       grid-row: 2/3;
+
+    }
+    
+    #box{
+        grid-column: 2/3;
+        grid-row: 2/3; 
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    #box #kontakt_mig{
+        margin-top: 10%;
+    }
+
+    .grid110{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}
+
