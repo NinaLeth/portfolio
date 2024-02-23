@@ -51,17 +51,21 @@ video {
     align-items: center;
   }
 
-  .link_bento a{
+  .link_bento a,
+  .link_bento p{
     font-size: 20pt;
     background-color: transparent;
+    color: #FF0523;
   }
 
   .link_bento:hover, 
-  .link_bento:hover a{
+  .link_bento:hover a,
+  .link_bento:hover p{
     background-color: #827EC3;
     color: #C2C0E5;
     border-color: #C2C0E5;
     cursor: pointer;
+    overflow: hidden;
   }
 
 /*fonte*/
@@ -761,11 +765,12 @@ footer{
     } 
 
     #nav_1 {
-        padding-top: 150px; /*så det kommer under headeren*/
+        padding-top: 250px; /*så det kommer under headeren*/
         margin-bottom: 20%;
         display: flex;
+        flex-direction: column;
         justify-content: left;
-        padding-left: 5%;
+        padding-left: 10%;
         gap:7px;
     }
 
@@ -869,11 +874,11 @@ footer{
     } 
 
     #nav {
-        padding-top: 150px; /*så det kommer under headeren*/
+        padding-top: 250px; /*så det kommer under headeren*/
         margin-bottom: 20%;
         display: flex;
-        justify-content: right;
-        padding-right: 5%;
+        flex-direction: column;
+        padding-left: 10%;
         gap:7px;
     }
 
@@ -974,10 +979,13 @@ footer{
         border-radius: 20px;
     }
 
-    .meta{
+    #meta{
         height: 100px;
         width: 120px;
         padding-bottom: 12px;
+        display: block;
+        width: 100%;
+        height: auto;
     }
 
     .figma{
@@ -1617,9 +1625,10 @@ footer{
     }
 
     .meta{
-        height: 150px;
         width: 175px;
+        height: 150px;
         padding-bottom: 12px;
+        background-color: pink;
     }
 
     .figma{

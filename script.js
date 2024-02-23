@@ -81,3 +81,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+/*LYD*/
+
+const knap_gellerup = document.getElementById("grid9");
+const lyd = document.getElementById("lyd");
+
+knap_gellerup.onclick = function(){ //når man klikker på knappen går lyden igang
+    lyd.play();
+};
+
+knap_gellerup.onclick = function () { //at den pauser og starter igen når man klikker
+    if (lyd.paused) {
+        lyd.play();
+    } else {
+        lyd.pause();
+    }
+};
