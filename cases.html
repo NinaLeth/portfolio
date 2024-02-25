@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Ninas Portfolie - Kompetencer</title>
+    <link rel="icon" href="images/logo_3D.png">
 </head>
 <body id="baggrund_lilla" class="case_baggrund">
     <header>
@@ -24,18 +25,18 @@
         </section>
 
         <section id="header_mobil">
-            <img id="mobil_logo" src="images/logo_3D.png" alt="Nina Leth Møllers logo">
+            <a href="forside.html"><img id="mobil_logo" src="images/logo_3D.png" alt="Nina Leth Møllers logo"></a>
             <img class="burgermenu_ikon" id="menu" src="images/burgermenu.png" alt="burgermenu ikon">
             
             <div id="nav_menu" class="menu-indhold">
                 <img class="burgermenu_ikon" id="kryds" src="images/kryds.png" alt="burgermenukryds ikon">
                 <div id="burgermenu_indhold">
                     <div id="burgermenu" class="wrapper">
-                        <div id="forsiden"><a href="forside.html">FORSIDE</a></div>
+                        <div id="cases" class="grid4"><a href="cases.html">KOMPETENCER</a></div>
                         <div id="om" class="grid1"><a href="ommig.html">HVEM ER NINA?</a></div>
                         <div id="kompetencer" class="grid2"><a href="kompetencer.html">ERFARING</a></div>
                         <div id="kontakt" class="grid3"><a href="kontakt.html">KONTAKT MIG</a></div>
-                        <div id="cases" class="grid4"><a href="cases.html">KOMPETENCER</a></div>
+                        <div id="forsiden"><a href="forside.html">FORSIDE</a></div>
                     </div>
                 </div>
             </div>
@@ -52,13 +53,13 @@
         <section class="bento">
             <div id="webdesign" class="grid5"><h1>WEBDESIGN & UDVIKLING</h1></div>
             <div class="grid6">  
-                <video autoplay muted loop>
-                <source src="videos/studiebyen_gellerup.mov" type="video/mp4">
+                <video preload="auto" autoplay muted loop>
+                <source src="videos/studiebyen_gellerup.mp4" type="video/mp4">
                 Din browser understøtter ikke videoen.
               </video>
             </div>
             <div class="grid7">
-                <video autoplay muted loop>
+                <video preload="auto" autoplay muted loop>
                     <source src="videos/studiebyen_mobil.mp4" type="video/mp4">
                     Din browser understøtter ikke videoen.
                 </video>
@@ -75,14 +76,16 @@
             </div>
             <div class="grid10">
                 <h2>STUDIEBYEN GELLERUP</h2>
-                <p>Førstesemesters eksamensprojekt handlede om "hemmelige steder", omverdenen burde kende til. Derfor lavede jeg, med udgangspunkt i Brabrand Boligforening, et site der skulle overbevise nye studerende fra andre byer, om at flytte til Gellerup, frem for midtbyen.</p>
+                <p>På første semester lavede jeg et site der skulle overbevise nye studerende fra andre byer, om at flytte til Gellerup, med Brabrand Boligforening som afsender.</p>
                 <h3>UX</h3>
-                <p>Jeg undersøgte derfor de studerendes behov samt ønsker, og skabte et site der præsenterer mulighederne i området med afsæt i målgruppens user goals.</p>
+                <p>Jeg undersøgte derfor hvilke krav studerende har til deres lokalområde, og fremviste forskellige eksempler på hvor i området de kan få opfyldt deres behov.</p>
                 <h3>UI DESIGN</h3>
-                <p>Design mæssigt fik jeg inspiration fra det lokale miljø, herunder polaridbilleder fra Gellerup Højskole & Forsamlingshus, overskrifterne startter frar skiltet til Gellerup Badet, farvepaletten fra de oprindelige betonbygninger i området. Hjemmesiden passer dermed til områdets visuelle identitet, hvilket jeg fandt vigitigt, da det er netop dét destuderende skal “købe”.</p>
+                <p>Design mæssigt fik jeg inspiration fra lokalmmiljøet, fonten og stilen til overskrifterne fik jeg fra skiltet til Gellerupbadet, polaridbillederne fra Gellerup Højskole & Forsamlingshus og farvepaletten fra de oprindelige betonbygninger i området. Hjemmesiden passer dermed til områdets visuelle identitet, hvilket jeg fandt vigitigt, da det er netop dét destuderende skal “købe”.</p>
                 <h3>PROGRAMMERING</h3>
-                <p>Da sitet blev lavet på første semster, er det udelukkende lavet i HTML & CSS. Sitet er responsivt og demonstration mine tidlige færdigheder inden for webudvikling.
-                </p>
+                <p>Sitet er lavet i HTML & CSS og demonstration mine tidlige færdigheder inden for webudvikling.</p>
+                <br><br>
+                <p>Projekt var det første jeg lavede, og det har styrket min forståelse for brugercentreret design og udviklet mine færdigheder inden for webudvikling</p>
+                <br><br>
             </div>
         </section>
 
@@ -92,24 +95,33 @@
             <img id="engel" src="images/kristine.png" alt="glansbillede engel af frivillig fra GellerupHøjskole">
           </div>
           <div class="grid13"></div>
-          <div id="grid14" class="link_bento"><a href="">HØR OM PROJEKTET</a></div>
-          <div id="grid15" class="link_bento"><a href="">SE HJEMMESIDEN</a></div>
+          <div id="grid14" class="link_bento">
+            <p>HØR OM PROJEKTET</p>
+            <audio id="lyd_gellerup1">
+                <source src="sound/design_gellerup-enhanced-90p.mp4" type="audio/mp4">
+                Din browser understøtter ikke audio elementet.
+              </audio>
+         </div>
+
+          <div id="grid15" class="link_bento"><a href="http://www.gelleruphojskole-frivillige.ninaleth.dk/">SE HJEMMESIDEN</a></div>
           <div class="grid16">
             <h2>FRIVILLIGE TIL GELLERUP HØJSKOLE</h2>
-            <p>Jeg elsker at arbejde med visuel identitet, og prøve at tænke virksomheder, områder eller koncepter ind i min designprocess.<br><br>I forbindels emed et projekt for Gellerup Højskole, skabte mine medstuderende og jeg et site til højskolen, der skal lokke flere frivillige til. Hjemmesiden er fyldt med storytelling, som skal inspirere brugeren til at blive en del af frivillig-holdet.</p>
+            <p>Jeg elsker at arbejde med visuel identitet. Dette gjorde jeg blandt andet i forbindelse med et projekt omhandlende Gellerup Højskole, hvor jeg sammen med tre andre medstuderende skabe et site, der skulle inspirere unge fra Aarhus og omegn til at blive en del af deres frivilliggruppe.</p>
+            <br><br>
+            <p>Da Gellerup Højskole stadig er på tegnebrættet, er hele projektet stadig en proces, og der kommer hele tiden nye tiltag og ideer på bordet. For at bringe denne dynamik ind i designet, valgte vi at trække paralleller til en gammeldags opslagstavle, hvor de frivilliges håndskrift og tegninger vises på lapper af papir, der ses når man scroller gennem sitet.</p>
             <h3>COLLAGER & ENGLE</h3>
-            <p>Selve højskolen ligger i en bygning, der har været brugt som både børnehave, hotel og kommunal arbejdsplads. Huset er derfor et padgework af stilarter, rumløsninger og historier. Hvilket fremstilles på hjemmesiden i form af en collageløsning, med forskellige teksturer og former.<br><br>Med afsæt i ideen om frivillighed, som noget man gør for hinanden og at dette dermed kan ses som en næstekærlig handling. Valgte vi at kalde de frivillige for ”engle”. Disse er implementeret i collageideen i form af glansbilleder, med et strejf af Gellerups urbanitet. 
-                <br><br>Se mere om projektet under <a class="textlink" href="#visuelleeffekter">visuelle effekter</a></p>
-          </div>
+            <p>Vi valgte at fremstillige de frivillige som "engle" for at fremhæve det fine ved at arbejde frivilligt. Visuelt kommer dette til udtryk som glasbilleder. 
+                Højskoleprojektet er i sig selv et padgework af historier, mennesker og ideer. Bygningens egen historie er lige så mangfoldig, idet denne har tjent som billiardklub, børnehave, hotel og kommunal arbejdsplads, før den blev højskole og forsamlingshus. Dette er implementeret på sitet gennem en collage-æstetik, som igen undertreger at højskolen er et projekt sammensat af forskellige delelementer, som stadig er en under udvikling. 
+                <br><br>Se mere om projektet under <a class="textlink" href="#visuelleeffekter">visuelle effekter.</a></p>
+                <br><br>
+            </div>
           <div class="grid17">
-            <video autoplay muted loop>
+            <video preload="auto" autoplay muted loop>
                 <source src="videos/frivillige_mobil.mp4" type="video/mp4">
                 Din browser understøtter ikke videoen.
             </video>
           </div>
-          <!--<div class="grid18">
-            <img id="telefon"src="images/anestelefon.gif" alt="gif med frivilligs telefon der ringer">
-        </div>-->
+       
           <div class="grid19">
             <img id="farver_bk" src="images/farver.png" alt="udsnit af designmanual med farvepaletten fra Børnenes Kontor Pølsevognes hjemmeside">
         </div>
@@ -118,21 +130,27 @@
           </div>
           <div class="grid21">
             <h2>BØRNENES KONTOR & DERES PØLSEVOGNE</h2>
-            <p>I forbindelse med et eksamensprojekt arbejde min gruppe og jeg med Børnenes Kontor Aarhus. Her udarbejdede vi en underside, til deres allerede eksisterende site, specifikt til deres kaffe- og pølsevogne. Vi tog udgangspunkt i deres egen visuelle identitet, men opdaterede den lidt, da de alligevel ønskede at re-designe af deres hjemmeside.
+            <p>I forbindelse med et eksamensprojekt samarbejdede min gruppe og jeg med Børnenes Kontor Aarhus for at forbedre deres online tilstedeværelse. Derfor udviklede vi en underside dedikeret til deres pølsevogne.
+                Vi tog fat i det historiske og nostalgiske aspekt af pølsevognene, som Børnenes Kontor har haft i Aarhus siden 1940’erne. Sitet skulle derfor gerne afspejle pølsevognenes lange historie, samtidig med at hjemmesiden skal henlede brugeren på barndomsminder og hotdogs med familien.
                 <br><br>
-                Vi tog fat i det historiske og nostalgiske aspekt af pølsevognene, som Børnenes Kontor har haft i Aarhus siden 1940’erne. Sitet skulle derfor gerne afspejle dette, samtidig med at det skulle henlede brugeren på barndomsminder og hotdogs med familien.
-                <br><br>
-                Tanken var at skabe en fuld visuel identitet som kunne bruges på tværs af platforme, derfor udarbejdede vi en designmanual, samt oprettede en Instagram konto til dem.
+                For at sikre en helhedsorienteret visuel identitet udarbejdede vi en designmanual, samt oprette en Instagram-konto dedikeret til Børnenes Kontors Pølsevogne. Denne følger det nye design, og kan bruges som en integreret del af organisationens sociale mediestrategi, så Aarhusianerne kan komme på fornavn med deres lokale pølsemand.
                 <br><br>
                 Se mere om projektet under <a class="textlink" href="#visuelleeffekter">visuelle effekter</a></p>
-          </div>
+                <br><br>
+            </div>
           <div class="grid22">
             <img id="font_bk" src="images/font.jpg" alt="fonte brugt på hjemmesiden for Børnenes Kontor Aarhus pølsevogne">
           </div>
-          <div id="grid25" class="link_bento"><a href="">HØR OM PROJEKTET</a></div>
-          <div id="grid24" class="link_bento"><a href="">SE HJEMMESIDEN</a></div>
+          <div id="grid25" class="link_bento">
+            <p>HØR OM PROJEKTET</p>
+            <audio id="lyd_bk1">
+                <source src="sound/bkdesign-enhanced-90p.mp4" type="audio/mp4">
+                Din browser understøtter ikke audio elementet.
+              </audio>
+        </div>
+          <div id="grid24" class="link_bento"><a href="http://www.borneneskontor-polsevogne.ninaleth.dk/">SE HJEMMESIDEN</a></div>
           <div class="grid23">
-            <video autoplay muted loop>
+            <video preload="auto" autoplay muted loop>
                 <source src="videos/bk_laptop.mp4" type="video/mp4">
                 Din browser understøtter ikke videoen.
               </video>
@@ -146,56 +164,69 @@
             <div class="grid28">
                 <h2>GELLERUP HØJSKOLE</h2>
                 <h3>"DEN RØDE TRÅD"</h3>
-                <p>I forbindelse med et projekt for Gellerup Højskole, udarbejde jeg en “rød tråd” , som skulle vække brugerens interesse og lede denne videre på sitet, samt skabe forbindelse mellem de forskellige elementer. 
+                <p>I forbindelse med et projekt for Gellerup Højskole udarbejdede jeg en 'rød tråd,' der skal fange brugerens interesse og guide dem gennem sitet. Denne er også med til at skabe forbindelse mellem de forskellige elementer på sitet.<br><br>
+                    Jeg har brugt en blanding af HTML, CSS og JavaScript til at skabe effekten af tråden, der langsomt kom til syne, i takt med man scrollede op eller ned på sitet. Selve tråden er tegnet i Adobe Illustrator. 
                     <br><br>
-                    Her brugte jeg en blanding af HTML, CSS & JavaScript til at skabe tråden der langsomt kom til syne på sitet, i takt med man scrollede længere ned eller op. 
-                    <br><br>
-                     Jeg har valgt at programmere alle mine hjemmesider, da jeg synes det giver større kreativ frihed.</p>
+                     Alle mine hjemmesider er programmerede, selvom det det indimellem skaber problemer, da jeg synes det giver en større kreativ frihed, hvilket jeg vægter højest.</p>
                 <h3>HÅNDSKRIFTEN DER FORTÆLLER</h3>
-                <p>Fortællingen om de frivillige blev fortalt gennem lyd og tegninger. 
+                <p>For at gøre sitet så personligt og relaterbart som muligt, valgte vi at bruge de frivilliges egne stemmer og håndskrift som formidlingskanal.
                     <br><br>
-                    De tre frivillige fortæller med egne ord om at være frivillig i Gellerup Højsole & Forsamlingshus, hvortil deres ord bliver visualiseret gennem håndskrift, som er animeret i Adobe After Effects. Animation og lyd aktiveres når man klikker på derespektive engleglansbilleder.
-                    <br><br>
-                    Dette blev valgt for at skabe en anderledes storytelling, som understreger den visuelle identitet for sitet.
+                    Deres historie aktiveres, når man klikker på deres billede, og her kommer deres ord til live gennem tegninger og håndskrift, der er animeret i Adobe After Effects. Dette blev valgt for at skabe en anderledes form for storytelling, som understreger den visuelle identitet for sitet.
                     <br><br>
                     Se mere om projektet under <a class="textlink" href="#visuelidentitet">visuel identitet</a></p>
                     <br><br>
             </div>
             <div class="grid29">
-                <video autoplay muted loop>
+                <video preload="auto" autoplay muted loop>
                     <source src="videos/frivillige_mobil.mp4" type="video/mp4">
                     Din browser understøtter ikke videoen.
                   </video>
             </div>
-            <div id="grid111" class="link_bento"><a href="">LYT TIL MIG</a></div>
-            <div id="grid112" class="link_bento"><a href="">SE HJEMMESIDEN HER</a></div>
+            <div id="grid111" class="link_bento">
+                <p>HØR OM PROJEKTET</p>
+                <audio id="lyd_gellerup2">
+                    <source src="sound/hojskole_effekter-enhanced-90p.mp4" type="audio/mp4">
+                    Din browser understøtter ikke audio elementet.
+                  </audio>
+            </div>
+            <div id="grid112" class="link_bento"><a href="http://www.gelleruphojskole-frivillige.ninaleth.dk/">SE HJEMMESIDEN HER</a></div>
             <div class="grid30">
-                <video autoplay muted loop>
+                <video preload="auto" autoplay muted loop>
                     <source src="videos/skrift_gh.mp4" type="video/mp4">
                     Din browser understøtter ikke videoen.
                   </video>
             </div>
-    
+            
+            <div class="grid32"><h2 class="overskrift" id="bk">BØRNENES KONTOR</h2></div>
             <div class="grid31">
-                <video autoplay muted loop>
-                    <source src="videos/effekt_bk.mov" type="video/mp4">
+                <video preload="auto" autoplay muted loop>
+                    <source src="videos/effekt_bk.mp4" type="video/mp4">
                     Din browser understøtter ikke videoen.
                   </video>
             </div>
-            <div class="grid32"><h2 class="overskrift" id="bk">BØRNENES KONTOR AARHUS</h2></div>
             <div class="grid33">
                 <br><br>
-                <p>I forbindelse med et eksamensprojekt udarbejdede min gruppe og jeg en underside til Børnenes Kontor Aarhus. Hver pølsevogn sin egen side med de nødvendige informationer om den respektive vogn. 
+                <p>Som en del af vores eksamensprojekt udviklede min gruppe og jeg en underside til Børnenes Kontor Aarhus' eksisterende hjemmeside, hvor hver pølsevogn fik sin egen side.
                 </p>
                 <h3>GIF & TIMERFUNKTION</h3>
-                <p>Hver vogn vises ved et foto med en tegnet effekt, samt en GIF der viser vognens omgivelser gennem tiden. Denne kører i loop, mens vognen efter første rul vises og derefter bliver på sitet. Denne effekt er lavet ved brug af javaScript.</p>
+                <p>Hver vogn præsenteres med et foto, der har en tegnet effekt, og en loopende GIF, der viser områdets udvikling gennem tiden og understreger dermed pølsevognenes lokalhistoriske værdi. Pølsevognen kommer til syne efter første afspilning af GIF'en, hvilket er implementeret ved brug af JavaScript.</p>
                 <h3>SWIPE FUNKTION</h3>
-                <p>Swiper man til højre på én af pølsevognsiderne, kommer man hen til den valgte vogns menukort, denne funktion er ligeledes lavet i javaScript. Denne er valgt, da nogle vogne har et meget stort menukort, som kræver en hel side. Ved at bruge swipemetoden, bliver brugeren på siden og skal dermed bruge mindre kliks på at navigere rundt på sitet. 
+                <p>Hvis man swiper til højre på én af pølsevognsiderne, kommer man til den valgte vogns menukort. Denne funktion er ligeledes lavet i JavaScript.
+
+                    Pølsevognen følger med, når man swiper, så brugeren visuelt hele tiden kan se, hvilken vogn de kigger på. 
+                    <br><br>Dette er inkluderet, da mennesker husker bedre visuelt, og dermed er der større sandsynlighed for, at brugeren kan forbinde hjemmesiden med de fysiske vogne.
                     <br><br>
                     Se mere om projektet under <a class="textlink" href="#visuelidentitet">visuel identitet</a></p>
-            </div>
-            <div id="grid34" class="link_bento"><a href="">LYT TIL MIG</a></div>
-            <div id="grid35" class="link_bento"><a href="">SE HJEMMESIDEN HER</a></div>
+                    <br><br>
+                </div>
+            <div id="grid34" class="link_bento">
+                <p>HØR OM PROJEKTET</p>
+                <audio id="lyd_bk">
+                    <source src="sound/bk_effekt-enhanced-90p (1).mp4" type="audio/mp4">
+                    Din browser understøtter ikke audio elementet.
+                  </audio>
+                </div>
+            <div id="grid35" class="link_bento"><a href="http://www.borneneskontor-polsevogne.ninaleth.dk/">SE HJEMMESIDEN HER</a></div>
             <div class="grid36">
                 <img src="images/raadhuspladsen.gif" alt="gif med billeder er Rådhuspladsen i Aarhus">
             </div>
@@ -206,41 +237,46 @@
                     <h1>CONTENT CREATION</h1>
                 </div>
                 <div id="grid38" class="link_bento">
-                    <a href="">LYT TIL MIG</a>
+                    <p>LYT TIL MIG</p>
+                <audio id="lyd_grim">
+                    <source src="sound/grimfest-enhanced-90p.mp4" type="audio/mp4">
+                    Din browser understøtter ikke audio elementet.
+                  </audio>
                 </div>
                 <div class="grid39">
-                    <video autoplay muted loop>
+                    <video preload="auto" autoplay muted loop>
                         <source src="videos/undergrim.mp4" type="video/mp4">
                         Din browser understøtter ikke videoen.
                       </video>
                 </div>
                 <div class="grid40">
                     <h2>GRIMFEST</h2>
-                    <p>I forbindelse med mit studiejob hos Den Grimmeste Aps, arbejder jeg med deres forskellige platforme. 
+                    <p>Gennem mit studiejob hos Den Grimmeste Aps spiller jeg en central rolle i håndteringen af deres forskellige platforme. 
                     </p>
                     <h3>KOMMUNIKATION</h3>
-                    <p>Her står jeg for den primære kommunikation fra festivalen til gæsterne, både gennem stories, opslag på sociale medier og på deres hjemmeside.</p>
+                    <p>Min hovedopgave er at stå for den primære kommunikation fra festivalen til gæsterne. Dette inkluderer oprettelse af stories, opslag på sociale medier og opdateringer på festivalens hjemmeside. Mit fokus er at skabe visuelt tiltrækkende indhold, der styrker festivalens visuelle identitet og engagerer målgruppen.</p>
                     <h3>STRATEGI </h3>
-                    <p>Dertil er jeg også med til at udarbejde SoMe strategi, i samarbejde med mine kollegaer. </p>
+                    <p>Jeg deltager aktivt i udformningen af en SoMe-strategi i tæt samarbejde med mine kollegaer. Vores mål er at skabe en sammenhængende og effektiv tilstedeværelse på sociale medier, der understøtter festivalens overordnede mål og vision.</p>
                     <h3>VIDEO & BILLEDMATERIALE</h3>
-                    <p>Jeg har filmet, klippet og redigeret videomateriale for GrimFest  til short form videos som reels og tiktok.  Dertil laver jeg ofte stories og opslag med egne billeder, bl.a. i forbindelse med livedækning af events. </p>
+                    <p>Min rolle omfatter også produktion af videoindhold, hvor jeg filmer, klipper og redigerer materiale til blandt andet short form videos til Instagramreels og TikTok.</p>
+                    <br><br>
                 </div>
                 <div class="grid43">
-                    <a href=""><img class="grimfest" src="images/instagram.png" alt="instagram logo"></a><p>@grimfest</p>
+                    <a href="https://www.instagram.com/grimfest/"><img class="grimfest" src="images/instagram.png" alt="instagram logo"></a><p>@grimfest</p>
                 </div>
 
                 <div class="grid44">
-                    <a href=""><img class="grimfest" src="images/facebook.png" alt="facebook logo"></a><p>GrimFest</p>
+                    <a href="https://www.facebook.com/GrimFest"><img class="grimfest" src="images/facebook.png" alt="facebook logo"></a><p>GrimFest</p>
                 </div>
 
                 <div class="grid41">
-                    <video autoplay muted loop>
+                    <video preload="auto" autoplay muted loop>
                         <source src="videos/grim_ig.mp4" type="video/mp4">
                         Din browser understøtter ikke videoen.
                       </video>
                 </div>
                 <div class="grid42">
-                    <video autoplay muted loop>
+                    <video preload="auto" autoplay muted loop>
                         <source src="videos/grimfest.mp4" type="video/mp4">
                         Din browser understøtter ikke videoen.
                       </video>
