@@ -995,7 +995,6 @@ body.case_baggrund{
         padding-top: 200px; /*så det kommer under headeren*/
     }
 
-    #ben, 
     .grid99 h2{
         text-align: left;
     }
@@ -1553,6 +1552,23 @@ body.case_baggrund{
         padding-right: 5%;
     }
 
+    .grid49,
+    .grid50,
+    .grid57,
+    .grid58{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .grid52,
+    .grid54{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
     .grid51{
         grid-column: 3/4; 
         grid-row: 4/7;
@@ -1699,7 +1715,7 @@ body.case_baggrund{
      /*om mig*/
 
      #ommig{
-        height: 100vh;
+        height: 80vh;
     }
     
      .grid81{
